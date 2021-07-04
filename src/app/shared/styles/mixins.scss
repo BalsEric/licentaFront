@@ -1,0 +1,50 @@
+@import "src/app/shared/styles/variables";
+
+@mixin style-for-tabs {
+  h1 {
+    display: inline-block;
+  }
+
+  .elements-container {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  .top-container {
+    min-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+
+@mixin crud-list-item {
+  min-width: 400px;
+  margin: 10px;
+
+  .mat-button {
+    text-transform: uppercase;
+    color: red;
+  }
+
+  .mat-flat-button {
+    text-transform: uppercase;
+    background-color: $button-color;
+    color: white;
+  }
+
+  .mat-card-title {
+    font-size: 18px;
+  }
+
+  .mat-card-content {
+    font-size: 14px;
+  }
+
+  .mat-card-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
