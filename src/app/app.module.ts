@@ -10,13 +10,19 @@ import {AuthGuard} from './util/auth.guard';
 import { LoginComponent } from './shared/components/login/login.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ConfigurationsComponent } from './pages/configurations/configurations.component';
+import { WardrobeComponent } from './pages/wardrobe/wardrobe.component';
+import { FashionComponent } from './pages/fashion/fashion.component';
+import { ClothComponent } from './shared/components/cloth/cloth.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HomeComponent,
-    ConfigurationsComponent
+    ConfigurationsComponent,
+    WardrobeComponent,
+    FashionComponent,
+    ClothComponent
   ],
   imports: [
     AppRoutingModule,
