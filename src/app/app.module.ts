@@ -13,6 +13,7 @@ import { ConfigurationsComponent } from './pages/configurations/configurations.c
 import { WardrobeComponent } from './pages/wardrobe/wardrobe.component';
 import { FashionComponent } from './pages/fashion/fashion.component';
 import { ClothComponent } from './shared/components/cloth/cloth.component';
+import {MatGridListModule} from "@angular/material/grid-list";
 
 @NgModule({
   declarations: [
@@ -24,14 +25,15 @@ import { ClothComponent } from './shared/components/cloth/cloth.component';
     FashionComponent,
     ClothComponent
   ],
-  imports: [
-    AppRoutingModule,
-    BrowserModule,
-    FormsModule,
-    BrowserAnimationsModule,
-    HttpClientModule,
-    AppAngularMaterialModule
-  ],
+    imports: [
+        AppRoutingModule,
+        BrowserModule,
+        FormsModule,
+        BrowserAnimationsModule,
+        HttpClientModule,
+        AppAngularMaterialModule,
+        MatGridListModule
+    ],
   exports: [
     AppAngularMaterialModule,
   ],

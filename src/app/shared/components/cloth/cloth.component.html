@@ -1,10 +1,14 @@
-<mat-card style="margin: 20px;">
-  <p>Cloth UID: {{cloth.uid}}</p>
-  <b>{{cloth.anotimp}}</b>
-  <br>
-  <b>{{cloth.material}}</b>
-  <br>
-  <b>{{cloth.tip_haina}}</b>
-  <br>
-  <b>{{cloth.color}}</b>
+
+<mat-card id="grad" style="margin: 30px; width:700px;border-radius:3%">
+
+  <mat-grid-list cols="4" rowHeight="2:1">
+    <mat-grid-tile>Cloth UID: {{cloth.uid}}</mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile>{{cloth.anotimp}}</mat-grid-tile>
+    <mat-grid-tile>{{cloth.material}}</mat-grid-tile>
+    <mat-grid-tile>{{cloth.tip_haina}}</mat-grid-tile>
+    <mat-grid-tile><div class="square" style="background-color:{{cloth.color}}"></div></mat-grid-tile>
+  </mat-grid-list>
 </mat-card>
